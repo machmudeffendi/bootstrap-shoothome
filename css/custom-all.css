@@ -2,6 +2,23 @@
 	font-size: .95rem;
 }
 
+body{
+
+}
+
+.content{
+  padding-top: 50px;
+}
+
+a{
+  color: #1D976C;
+}
+
+a:hover{
+  color: #959595;
+  text-decoration: none;
+}
+
 /*
 	Background Color
 */
@@ -34,10 +51,13 @@
   border-color: #93F9B9;
 }
 
-
+.navbar{
+  padding-top: .5rem;
+  padding-bottom: .5rem;
+}
 .navbar-brand{
-	padding-top: .75rem;
-	padding-bottom: .75rem;
+	padding-top: .0rem;
+	padding-bottom: .0rem;
 	font-weight: 200!important;
 }
 
@@ -97,4 +117,49 @@
 .form-control-src:focus{
 	box-shadow: 0 0 0 3px rgba(255,255,255,.1);
 	color: #495057;
+}
+
+.c-shadow{
+  box-shadow: 0 1px 6px 0 rgba(49, 53, 59, 0.12);
+}
+
+.card{
+  border: none;
+  border-radius: 0px;
+  box-shadow: 0 1px 6px 0 rgba(49, 53, 59, 0.12);
+  margin-top: 8px;
+}
+
+.card .card-img{
+  height: 300px; 
+}
+
+.row-custom .card{
+  padding: .5rem;
+  margin-bottom: 1.5rem;
+}
+
+.custom-nav a.active{
+  color: #155724;
+  background-color: #d4edda;
+  border-color: #c3e6cb;
+  border-radius: 7px;
+  box-shadow: 0 1px 6px 0 rgba(49, 53, 59, 0.12);
+}
+.custom-nav a{
+  color: #212529;
+  margin-right: 10px;
+}
+.custom-nav a:hover{
+  color: #155724;
+  background-color: #d4edda;
+  border-color: #c3e6cb;
+  border-radius: 7px;
+  box-shadow: 0 1px 6px 0 rgba(49, 53, 59, 0.12);
+}
+
+footer{
+  border-top: 2px solid #d4edda;
+  padding-top: 50px;
+  padding-bottom: 50px;
 }
