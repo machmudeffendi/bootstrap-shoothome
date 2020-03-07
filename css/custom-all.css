@@ -131,7 +131,7 @@ a:hover{
 }
 
 .card .card-img{
-  height: 300px; 
+  height: 300px;
 }
 
 .row-custom .card{
@@ -162,4 +162,8 @@ footer{
   border-top: 2px solid #d4edda;
   padding-top: 50px;
   padding-bottom: 50px;
+}
+
+.foo-item a{
+	display: block;
 }
