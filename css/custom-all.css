@@ -123,6 +123,8 @@ a:hover{
   box-shadow: 0 1px 6px 0 rgba(49, 53, 59, 0.12);
 }
 
+/* Card */
+
 .card{
   border: none;
   border-radius: 0px;
@@ -138,6 +140,90 @@ a:hover{
   padding: .5rem;
   margin-bottom: 1.5rem;
 }
+
+.card-img:hover{
+	cursor: pointer;
+}
+.card-img:hover ~ .card-desc-img::before{
+	content: '';
+	position: absolute;
+	display: block;
+	width: calc(100% - 16px);
+	height: calc(100% + 92px);
+	background-color: #000;
+	top: -100px;
+	opacity: .4;
+	border-bottom-left-radius: 2px;
+	border-bottom-right-radius: 2px;
+	transition: .5s;
+}
+.card-img:hover ~ .card-desc-img .cdi-title{
+	margin-top: -118px;
+	transition: .5s;
+}
+.card-img:hover ~ .card-desc-img .cdi-desc{
+	margin-top: -88px;
+	overflow: hidden;
+  text-overflow:  ellipsis;
+  white-space: normal;
+	height: calc(100% + 40px);
+	transition: .5s;
+}
+
+.card .card-desc-img{
+	position: absolute;
+	padding: 20px 0;
+	bottom: 0;
+	color: #fff;
+	width: 100%;
+}
+
+.card-desc-img::before{
+	content: '';
+	position: absolute;
+	display: block;
+	width: calc(100% - 16px);
+	height: calc(100% + 24px);
+	background-color: #000;
+	top: -32px;
+	opacity: .4;
+	border-bottom-left-radius: 2px;
+	border-bottom-right-radius: 2px;
+	transition: .5s;
+}
+
+.card-desc-img > span{
+	display: block;
+	position: absolute;
+	padding: 0 20px;
+}
+
+.card-desc-img .cdi-title{
+	font-size: 25px;
+	font-weight: 700;
+	margin-top: -50px;
+	overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+	width: calc(100% - 16px);
+	transition: .5s;
+}
+.cdi-title:hover{
+	cursor: pointer;
+}
+
+.card-desc-img .cdi-desc{
+	font-size: 14px;
+	font-weight: 300;
+	margin-top: -20px;
+	overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+	width: calc(100% - 16px);
+	transition: .5s;
+}
+
+/* End Card */
 
 .custom-nav a.active{
   color: #155724;
